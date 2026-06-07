@@ -63,7 +63,7 @@ sari-sari-pos/
 | Sales Dashboard & Charts | ✅ | ❌ |
 | Add / Update Products | ✅ | ❌ |
 | Add / Promote / Delete Employees | ✅ | ❌ |
-| POS / Checkout | ❌ | ✅ |
+| POS / Checkout | ❌ | ✅ | ** will change later ig idk
 | View Own Transactions | ❌ | ✅ |
 | View Inventory | ✅ | ✅ (read-only) |
 
