@@ -198,7 +198,7 @@ function resetPOS() {
 
 function viewReceipt() {
     if (lastOrderId) {
-        window.open(`/cashier/receipt.php?order_id=${lastOrderId}`, '_blank');
+        window.open(`/pos_system/cashier/receipt.php?order_id=${lastOrderId}`, '_blank');
     }
     resetPOS();
 }
