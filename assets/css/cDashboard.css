@@ -1,0 +1,16 @@
+.charts-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .chart-container { position: relative; height: 220px; }
+        .chart-full { grid-column: 1 / -1; }
+        .chart-full .chart-container { height: 200px; }
+        @media (max-width: 900px) {
+            .charts-grid { grid-template-columns: 1fr; }
+            .chart-full  { grid-column: 1; }
+        }
+        .badge-completed { background:#f0fff4; color:#276749; }
+        .badge-cancelled { background:#fff5f5; color:#9b2c2c; }
+        .badge-pending   { background:#fffff0; color:#744210; }

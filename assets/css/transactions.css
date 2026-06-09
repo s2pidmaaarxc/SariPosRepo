@@ -1,0 +1,12 @@
+ .filter-bar {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+        .filter-bar .form-control { width: auto; }
+        .filter-bar input[type="search"] { min-width: 200px; }
+        .badge-completed { background:#f0fff4; color:#276749; }
+        .badge-cancelled { background:#fff5f5; color:#9b2c2c; }
+        .badge-pending   { background:#fffff0; color:#744210; }
