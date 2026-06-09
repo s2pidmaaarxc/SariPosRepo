@@ -1,1 +1,1 @@
-# Manager Part nalang nililinis ko, sleep muna me :>
+# Manager part nalang nililinis ko, sleep muna me :>
