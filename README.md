@@ -1,1 +1,1 @@
-# MALAPIT NA MATAPOS, SLEEP MUNA AKO :>
+# Manager Part nalang nililinis ko, sleep muna me :>
