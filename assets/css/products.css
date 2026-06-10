@@ -1,0 +1,28 @@
+.filter-bar { 
+    display:flex; 
+    gap:10px; 
+    align-items:center; 
+    flex-wrap:wrap; 
+}
+
+.filter-bar .form-control { width:auto; }
+.filter-bar input[type="search"] { min-width:200px; }
+.stock-ok       { color:var(--success); font-weight:600; }
+.stock-low      { color:var(--warning);  font-weight:600; }
+.stock-critical { color:var(--danger);   font-weight:700; }
+.action-btns    { display:flex; gap:6px; }
+
+.tab-switcher {
+    display:flex; border:1.5px solid var(--border);
+    border-radius:var(--radius-sm); overflow:hidden; margin-bottom:20px;
+}
+
+.tab-switch-btn {
+    flex:1; padding:8px; border:none; background:var(--bg);
+    font-family:var(--font-body); font-size:0.82rem; font-weight:600;
+    color:var(--text-muted); cursor:pointer; transition:var(--transition);
+}
+
+.tab-switch-btn.active { background:var(--primary); color:var(--white); }
+.tab-pane { display:none; }
+.tab-pane.active { display:block; }
