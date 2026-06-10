@@ -1,4 +1,4 @@
-# 🏪 SariPOS — Sari-Sari Store Point of Sale System
+# SariPOS — Sari-Sari Store Point of Sale System
 
 > **DCIT 55A — Advanced Database Management System**
 > Final Examination | 2nd Semester A.Y. 2025–2026
@@ -7,7 +7,7 @@
 
 ---
 
-## 📋 Project Overview
+## Project Overview
 
 **SariPOS** is a database-driven Point of Sale (POS) system designed for sari-sari store operations. It demonstrates proper database design, data preparation, and SQL-based analysis as required by the final examination of DCIT 55A — Advanced Database Management System.
 
@@ -15,7 +15,7 @@ The system supports two user roles — **Manager** and **Cashier** — with real
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Design and develop a fully functional database-driven system based on a real-world scenario
 - Apply proper database design with normalized tables and relationships
@@ -24,7 +24,7 @@ The system supports two user roles — **Manager** and **Cashier** — with real
 
 ---
 
-## ✅ Expected Outcomes
+## Expected Outcomes
 
 - A fully functional database system with properly designed tables and relationships
 - A dataset containing at least 100 records with identified and resolved data quality issues
@@ -36,7 +36,7 @@ The system supports two user roles — **Manager** and **Cashier** — with real
 
 ---
 
-## 🗄️ Database Design
+## Database Design
 
 ### Entity-Relationship Overview
 
@@ -88,7 +88,7 @@ CREATE TABLE order_items (
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 - **35 products** across 7 categories (Noodles, Drinks, Snacks, Canned Goods, Condiments, Personal Care, Beverages)
 - **6 user accounts** (2 managers, 4 cashiers)
@@ -100,7 +100,7 @@ CREATE TABLE order_items (
 
 ---
 
-## 🧹 Data Quality
+## Data Quality
 
 ### Identified Data Issues
 
@@ -136,7 +136,7 @@ WHERE r.receipt_id IS NULL AND o.status = 'completed';
 
 ---
 
-## 🔍 SQL Requirements
+## SQL Requirements
 
 ### 1. Data Filtering Queries (5+)
 
@@ -242,7 +242,7 @@ ORDER BY total_sold DESC;
 
 ---
 
-## 🖥️ System Features
+## System Features
 
 ### Manager Panel
 - **Dashboard** — Store-wide sales overview, cashier performance charts, low stock alerts
@@ -257,7 +257,7 @@ ORDER BY total_sold DESC;
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -270,7 +270,7 @@ ORDER BY total_sold DESC;
 
 ---
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 - XAMPP / WAMP / LAMP with PHP 8+ and MySQL 8+
@@ -320,7 +320,7 @@ ORDER BY total_sold DESC;
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 pos_system/
@@ -368,7 +368,7 @@ pos_system/
 
 ---
 
-## 📈 Key Insights from Data Analysis
+## Key Insights from Data Analysis
 
 1. **Top-selling category** is Noodles and Beverages — fast-moving, low-margin items
 2. **Peak transaction hours** can be tracked via the hourly sales chart on the cashier dashboard
@@ -378,7 +378,7 @@ pos_system/
 
 ---
 
-## 👥 Group Composition
+## Group Composition
 
 This project was developed by a group of 6–7 members as required by the examination.
 
@@ -392,11 +392,11 @@ This project was developed by a group of 6–7 members as required by the examin
 | *(Member 6)* | *(e.g., User Management & Authentication)* |
 | *(Member 7)* | *(e.g., Documentation & Presentation)* |
 
-> ⚠️ All members are equally responsible for the project. Any member may be asked to explain any part of the system during the demonstration.
+> All members are equally responsible for the project. Any member may be asked to explain any part of the system during the demonstration.
 
 ---
 
-## 🎬 System Demonstration
+## System Demonstration
 
 The demonstration covers:
 
@@ -408,7 +408,7 @@ The demonstration covers:
 
 ---
 
-## 📝 Examination Rubric Summary
+## Examination Rubric Summary
 
 | Criteria | Points |
 |---|---|
@@ -425,7 +425,7 @@ The demonstration covers:
 
 ---
 
-## 📄 License
+## License
 
 This project was developed as an academic requirement for **DCIT 55A — Advanced Database Management System** at Cavite State University CvSU CCAT Campus. For educational purposes only.
 
