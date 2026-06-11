@@ -157,7 +157,7 @@ function _initDatabase(PDO $pdo) {
     $hash = password_hash('123456', PASSWORD_BCRYPT);
     $users = [
                ['Admin',     'manager'],
-               ['Pedro', 'manager'],
+               ['Pedro',     'manager'],
                ['Juan',      'cashier'],
                ['Maria',     'cashier'],
                ['Jose',      'cashier'],
