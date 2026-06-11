@@ -155,16 +155,22 @@ function _initDatabase(PDO $pdo) {
     ");
  
     $hash = password_hash('123456', PASSWORD_BCRYPT);
+    $users = [
+               ['Admin',     'manager'],
+               ['Pedro', 'manager'],
+               ['Juan',      'cashier'],
+               ['Maria',     'cashier'],
+               ['Jose',      'cashier'],
+               ['Ana',       'cashier'],
+             ];
+
     $stmt = $pdo -> prepare("
-        INSERT INTO users (username, password, role) VALUES
-        ('Admin',        :h, 'manager'),
-        ('Pedro_mgr',    :h, 'manager'),
-        ('Juan', :h, 'cashier'),
-        ('Maria',  :h, 'cashier'),
-        ('Jose', :h, 'cashier'),
-        ('Ana', :h, 'cashier')
-    ");
-    $stmt -> execute([':h' => $hash]);
+    INSERT INTO users (username, password, role) VALUES (?, ?, ?)
+");
+
+    foreach ($users as $u) {
+    $stmt -> execute([$u[0], $hash, $u[1]]);
+}
  
     $pdo -> exec("
         INSERT INTO products (name, category_id, price, stock) VALUES
