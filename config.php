@@ -62,16 +62,16 @@ function getDB() {
             );
  
             // Sync timezones
-            $pdo->exec("SET time_zone = '+08:00'");
+            $pdo -> exec("SET time_zone = '+08:00'");
 
-            // Step 4: Run tables and seeding logic automatically
+            // Run tables and seeding logic automatically
             _initDatabase($pdo);
  
         } catch (PDOException $e) {
             http_response_code(500);
             die(json_encode([
                 'success' => false,
-                'message' => 'Database connection failed: ' . $e->getMessage()
+                'message' => 'Database connection failed: ' . $e -> getMessage()
             ]));
         }
     }
@@ -81,7 +81,7 @@ function getDB() {
 // Helper function to dynamically provision tables and seeds
 function _initDatabase(PDO $pdo) {
     // Check if tables are already built. If yes, skip initialization.
-    $tables = $pdo -> query("SHOW TABLES")->fetchAll(PDO::FETCH_COLUMN);
+    $tables = $pdo -> query("SHOW TABLES") -> fetchAll(PDO::FETCH_COLUMN);
     if (count($tables) > 0) return;
  
     // CREATE TABLES
